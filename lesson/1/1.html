@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div id="root">
+        <div id="red" style="
+    background: red;
+    width: 40px;
+    height: 40px;
+    border: 14px black;
+    margin: 2px">
+        </div>
+        <div id="yellow" style="
+    background: yellow;
+    width: 40px;
+    height: 40px;
+    border: 14px black;
+    margin: 2px">
+        </div>
+        <div id="green" style="
+    background: green;
+    width: 40px;
+    height: 40px;
+    border: 14px black;
+    margin: 2px">
+        </div>
+
+</div>
+<!--<div>-->
+ <!--<ul id="list">-->
+
+ <!--</ul>-->
+<!--</div>-->
+<!--<input type="button" id="buttom" />-->
+</body>
+</html>
+<script>
+    elem = document.getElementById('root');
+    function handler(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        console.log(e.target.id);
+        if (e.target.id == 'red'){ alert ('RED SQUARE')};
+        if (e.target.id == 'green'){ alert ('GREEN SQUARE')};
+        if (e.target.id == 'yellow'){ alert ('YELLOW SQUARE')};
+        return false;
+    }
+    elem.addEventListener('click', handler, false);
+
+</script>
+<!--<script>-->
+    <!--var parent = document.getElementById('list');-->
+    <!--var child1 = document.createElement('li');-->
+    <!--var child2 = document.createElement('li');-->
+    <!--var child3 = document.createElement('li');-->
+    <!--var child4 = document.createElement('li');-->
+    <!--parent.appendChild(child1)//прилепляем чайлд к парент-->
+    <!--parent.appendChild(child2)-->
+    <!--parent.appendChild(child3)-->
+    <!--parent.appendChild(child4)-->
+    <!--child1.innerHTML= 'Snoop Doog';-->
+    <!--child2.innerHTML = '50 cent';-->
+    <!--child3.innerHTML = 'Waka Flaka';-->
+    <!--child4.innerHTML = 'Rap God';-->
+<!--</script>-->
+
+<!--<select id="city">-->
+    <!--<option value="100">Санкт-Петербург</option>-->
+    <!--<option value="200">Калининрад</option>-->
+    <!--<option value="300">Моска</option>-->
+    <!--<option value="400">Петропавловск-Камчатский</option>-->
+<!--</select>-->
+
+<!--<script>-->
+<!--var city = [];-->
+<!--city[100] = 'Санкт-Петербург';-->
+<!--city[200] = 'Калиниград';-->
+<!--city[300] = 'Москва';-->
+<!--city[400] = 'Петропавловск-Камчатский';-->
+<!--city[500] = 'Тверь';-->
+<!--city[600] = 'Тула';-->
+<!--city[700] = 'Караганда';-->
+<!--city[800] = 'Ейск';-->
+<!--function buildOption (val, name) {-->
+<!--var node = document.createElement('option');-->
+<!--node.setAttribute('value', val );-->
+<!--node.innerHTML = name;-->
+<!--return node;-->
+<!--}-->
+<!--parent = document.getElementById('city');-->
+    <!--for (i in city) {-->
+        <!--child = buildOption(i,city[i]);-->
+    <!--parent.appendChild(child);-->
+    <!--}-->
+<!--</script>-->
+<!--<script>-->
+
+<!--//    document.getElementById('buttom').onclick=function(){alert('Nigga')};-->
+<!--//    document.getElementById('buttom').onclick=function(event){console.log(event)};-->
+<!--</script>-->
